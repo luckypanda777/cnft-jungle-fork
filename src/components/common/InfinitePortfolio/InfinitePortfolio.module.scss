@@ -1,0 +1,44 @@
+.scrollEl {
+  height: inherit;
+  max-height: inherit;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.infiniteFilterContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.loading {
+ margin-right: 15px
+}
+
+
+.filterButtons {
+  width: 200px
+}
+
+.defaultHeaderTitleStyle {
+  flex: 1;
+  min-width: 200px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.defaultHeaderStyle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  margin-right: 20px
+}

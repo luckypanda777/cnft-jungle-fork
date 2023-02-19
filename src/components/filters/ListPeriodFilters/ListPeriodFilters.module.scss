@@ -1,0 +1,92 @@
+.listPeriod {
+  margin-top: 20px;
+  position: sticky;
+  top: var(--headerHeight);
+  z-index: 10;
+
+  @media  (max-width: 600px) {
+    top: 0px;
+    margin-top: 0px;
+  }
+}
+
+.listPeriodContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: var(--sidebarBg);
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.containerPeriod {
+  display: flex;
+  column-gap: 56px;
+  padding: 12px;
+
+  @media screen and (max-width: 900px) {
+    column-gap: 0;
+  }
+}
+
+.loadingPeriod {
+  display: flex;
+  column-gap: 12px;
+  padding: 12px;
+}
+
+.toggleContainer {
+  display: flex;
+  padding: 24px 12px;
+  background-color: var(--sidebarBg);
+}
+
+.secondaryFilters {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  column-gap: 25px;
+}
+
+.periodBtn {
+  min-width: 45px;
+  text-transform: unset;
+
+  @media screen and (max-width: 1200px) {
+    min-width: 40px;
+  }
+
+  @media screen and (max-width: 900px) {
+    min-width: 35px;
+  }
+}
+
+.filtersText {
+  font-size: 12px;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.collectionCount {
+  display: flex;
+  align-items: center;
+  color: var(--fontColor);
+  margin-right: 16px;
+}
+
+.searchInput {
+  width: 220px;
+
+  @media screen and (max-width: 1200px) {
+    width: 190px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+}

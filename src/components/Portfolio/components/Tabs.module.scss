@@ -1,0 +1,14 @@
+.statsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--bgColor);
+  border-radius: 6px;
+  min-width: 700px;
+
+  @media screen and (max-width: 900px) {
+    justify-content: center;
+    flex-direction: column;
+    min-width: auto;
+  }
+}

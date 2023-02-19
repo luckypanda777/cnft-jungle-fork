@@ -1,0 +1,65 @@
+.walletStats {
+  background-color: var(--bgColor);
+  border-radius: 12px;
+  padding: 48px 30px 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.box {
+  border: 2px solid var(--lightGrey);
+  border-radius: 12px;
+  padding: 17px 20px;
+}
+.boxShadow {
+  background-color: var(--lightGrey);
+}
+.title {
+  font-size: 14px;
+  color: var(--fontColor);
+  line-height: 16px;
+}
+.totalValue {
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 5px;
+  line-height: 29px;
+}
+.unit {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--grey);
+}
+.dayWarp {
+  color: var(--grey);
+  font-size: 14px;
+  line-height: 16px;
+}
+.titleRankWrap {
+  margin-bottom: 2px;
+}
+.rankWrap {
+  color: var(--grey);
+  font-size: 14px;
+  line-height: 19px;
+}
+.rankNumber {
+  font-size: 16px;
+  color: var(--fontColor);
+}
+.gray {
+  color: var(--grey);
+}
+.red {
+  color: var(--negativeValueColor);
+}
+.shadow {
+  color: var(--shadowColor);
+}
+.yellow {
+  color: var(--topRankColor);
+}
+.green {
+  color: var(--positiveValueColor);
+}

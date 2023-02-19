@@ -1,0 +1,127 @@
+.quoteBox {
+  min-width: 500px;
+  min-height: 250px;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #171718;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.authorImage {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 50px;
+}
+
+.autorCredentials {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.authorNameBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorName {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.33px;
+  color: #fff;
+}
+
+.authorHandle {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.25px;
+  color: #bebdc6;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--logoColor);
+    text-decoration: underline;
+  }
+}
+
+.twitterButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: #343437;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #4f4f53;
+  }
+}
+
+.author {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quotes {
+  display: flex;
+  column-gap: 10px;
+  width: 250vw;
+}
+
+.quotesContainer {
+  display: flex;
+  row-gap: 20px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.scrollLeft {
+  animation: moveleft 240s linear infinite;
+  display: flex;
+  column-gap: 30px;
+  transform: translate(-10%, 0);
+}
+
+.fade {
+  position: relative;
+  padding: 0;
+}
+
+.fade:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(17, 17, 17, 1),
+      rgba(17, 17, 17, 0.1) 100px
+    ),
+    linear-gradient(to left, rgba(17, 17, 17, 1), rgba(17, 17, 17, 0.1) 100px);
+}
+
+.scrollRight {
+  animation: moveright 720s linear infinite;
+  display: flex;
+  column-gap: 30px;
+  transform: translate(-60%, 0);
+}
+
+@keyframes moveleft {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes moveright {
+  to {
+    transform: translateX(50%);
+  }
+}

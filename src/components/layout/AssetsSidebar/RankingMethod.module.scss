@@ -1,0 +1,23 @@
+.acceptBtn {
+  text-align: right;
+  margin-top: 5px;
+}
+
+.checkboxSetting {
+  display: flex;
+  flex-direction: column;
+
+  & > div {
+    flex: 1;
+  }
+}
+
+.traitMismatchText {
+  font-size: 12px;
+  color: var(--errorColor);
+}
+
+.traitMismatch {
+  height: 18px;
+  min-height: 18px;
+}

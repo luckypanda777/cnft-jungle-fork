@@ -1,0 +1,93 @@
+.filters {
+  display: flex;
+  padding: 24px 12px;
+  column-gap: 24px;
+  position: sticky;
+  background-color: var(--assetsBg);
+  top: var(--headerHeight);
+  left: 0;
+  z-index: 100;
+  justify-content: flex-start;
+
+  @media screen and (max-width: 600px) {
+    flex-wrap: wrap;
+    row-gap: 15px;
+    padding: 6px 12px 18px 12px;
+    width: 290px;
+  }
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .filterBody {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 8px;
+  }
+}
+
+.mobileFilters {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 16px;
+  row-gap: 16px;
+  width: 100%;
+}
+
+.filterContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  & > div {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    flex-direction: row;
+  }
+}
+
+.sortHeading {
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 7px;
+  color: var(--fontColor);
+}
+
+.filterHeading {
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 7px;
+  color: var(--fontColor);
+  font-family: newgilroysemibold;
+}
+
+
+.collectionCount {
+  display: flex;
+  align-items: center;
+  color: var(--fontColor);
+  margin-right: 16px;
+  font-family: newgilroybold;
+}
+
+.sizeFilter {
+  
+}
+
+.filterLink {
+  color: var(--fontColor)
+}

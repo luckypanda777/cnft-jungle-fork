@@ -1,0 +1,6 @@
+<svg width="50" height="53" viewBox="0 0 50 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1.5" y="1.5" width="47" height="50" rx="4.5" stroke="var(--logoColor)" stroke-width="3"/>
+<line x1="11.5" y1="13.5" x2="38.5" y2="13.5" stroke="var(--logoColor)" stroke-width="3" stroke-linecap="round"/>
+<line x1="11.5" y1="36.5" x2="33.5" y2="36.5" stroke="var(--logoColor)" stroke-width="3" stroke-linecap="round"/>
+<line x1="11.5" y1="24.5" x2="38.5" y2="24.5" stroke="var(--logoColor)" stroke-width="3" stroke-linecap="round"/>
+</svg>

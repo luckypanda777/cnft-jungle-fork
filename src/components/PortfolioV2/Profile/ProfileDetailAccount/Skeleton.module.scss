@@ -1,0 +1,14 @@
+.wrap{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    gap: 10px;
+}
+.box{
+    background: var(--bgColor);
+    border-radius: 12px;
+    padding: 18px 30px;
+}
+.button{
+    width: 35px;
+    height: 35px;
+}

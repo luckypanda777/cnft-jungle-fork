@@ -1,0 +1,191 @@
+@mixin shadow-helper() {
+  -webkit-box-shadow: 0.12em 0.12em 0.5em rgba(0, 0, 0, 0.23),
+    -0.12em 0.12em 0.5em rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0.12em 0.12em 0.5em rgba(0, 0, 0, 0.23),
+    -0.12em 0.12em 0.5em rgba(0, 0, 0, 0.23);
+  box-shadow: 0.12em 0.12em 0.5em rgba(0, 0, 0, 0.23),
+    -0.12em 0.12em 0.5em rgba(0, 0, 0, 0.23);
+}
+@mixin shadow-helper-invert() {
+  -webkit-box-shadow: 0.12em 0 0.5em rgba(0, 0, 0, 0.23),
+    0 -0.12em 0.5em rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0.12em 0 0.5em rgba(0, 0, 0, 0.23),
+    0 -0.12em 0.5em rgba(0, 0, 0, 0.23);
+  box-shadow: 0.12em 0 0.5em rgba(0, 0, 0, 0.23),
+    0 -0.12em 0.5em rgba(0, 0, 0, 0.23);
+}
+@mixin flex() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+@mixin flex-align() {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@mixin flex-flow($attr, $wrap) {
+  -webkit-flex-flow: $attr $wrap;
+  -moz-flex-flow: $attr $wrap;
+  flex-flow: $attr $wrap;
+  -ms-flex-direction: $attr;
+}
+@mixin justify-content($attr) {
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: $attr;
+  -moz-justify-content: $attr;
+  -ms-justify-content: $attr;
+  -o-justify-content: $attr;
+  justify-content: $attr;
+}
+@mixin border-radius($int) {
+  -webkit-border-radius: $int;
+  -moz-border-radius: $int;
+  border-radius: $int;
+}
+
+.content {
+  @include flex();
+  @include flex-align();
+  @include flex-flow(row, nowrap);
+}
+
+.verified {
+  @include flex();
+  @include flex-align();
+  position: relative;
+  margin: 0 auto;
+  font-size: 1em;
+  .content-wrapper {
+    @include flex();
+    @include flex-align();
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    .content {
+      font-size: inherit;
+    }
+  }
+}
+.local {
+  color: #fff;
+  .badge-layer {
+    background-color: #00c9ff;
+  }
+}
+.global {
+  color: #fff;
+  .badge-layer {
+    background-color: #00c9ff;
+  }
+}
+.badge-wrapper {
+  position: relative;
+}
+.badge-layer {
+  @include border-radius(21%);
+  width: 4em;
+  height: 4em;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  z-index: 3;
+  &:before {
+    @include border-radius(21%);
+    content: '';
+    position: absolute;
+    height: 4em;
+    width: 4em;
+    background-color: inherit;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+  }
+}
+.badge-layer.grow {
+  background: #00c9ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  z-index: 2;
+}
+.badge-layer.shadow {
+  @include shadow-helper();
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  z-index: 1;
+  &:before {
+    @include shadow-helper-invert();
+  }
+}
+.badge-layer.outline {
+  background-color: rgba(0, 0, 0, 0.23);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(1.113);
+  -moz-transform: scale(1.113);
+  -ms-transform: scale(1.113);
+  transform: scale(1.113);
+  z-index: 1;
+}
+.check {
+  @include flex();
+  @include flex-align();
+  &:after {
+    /*Add another block-level blank space*/
+    content: '';
+    display: block;
+    margin-top: -0.5em;
+    /*Make it a small rectangle so the border will create an L-shape*/
+    width: 1.6em;
+    height: 2.8em;
+    /*Add a white border on the bottom and left, creating that 'L' */
+    border: solid #fff;
+    border-width: 0 0.7em 0.7em 0;
+    /*Rotate the L 45 degrees to turn it into a checkmark*/
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+.refresh {
+  @media (max-width: 600px) {
+    position: fixed;
+    bottom: 15%;
+    right: 1.5%;
+    z-index: 1000;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+  }
+}

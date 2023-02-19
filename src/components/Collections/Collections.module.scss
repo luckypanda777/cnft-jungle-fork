@@ -1,0 +1,222 @@
+.collections {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--assetsBg);
+  margin-bottom: 24px;
+  min-height: 500px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+  @media screen and (max-width: 1400px) {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-top: 24px;
+  }
+}
+
+.mainSection {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 575px;
+
+  @media screen and (max-width: 600px) {
+    height: 400px;
+  }
+}
+
+.mainBgImage {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center top;
+  z-index: 0;
+
+  @media screen and (max-width: 600px) {
+    background-size: cover;
+  }
+}
+
+.sectionTitleContainer {
+  text-align: center;
+  position: relative;
+  margin-top: 64px;
+}
+
+.sectionTitle {
+  font-family: 'newgilroysemibold';
+  text-transform: uppercase;
+  font-size: 104px; //46
+  font-weight: 700;
+  letter-spacing: 10px;
+  margin: 0 0 -67.5px 0; //-42
+
+  @media screen and (max-width: 600px) {
+    font-size: 46px;
+    margin: 0 0 -42px 0;
+  }
+}
+
+@supports (-webkit-text-stroke: 1px white) {
+  .titleStatistics {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    color: black !important;
+  }
+}
+
+.titleStatistics {
+  color: #fff;
+}
+
+.titleTrendings {
+  color: #fff;
+}
+
+.main {
+  width: 100%;
+  max-width: 1600px;
+  flex: auto;
+  background-color: var(--assetsBg);
+  min-height: calc(100vh - var(--headerHeight));  
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.collectionsContainerMenuOpen {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: calc(
+    ( (var(--collectionCardWidth) + (var(--collectionCardMargin) * 2)) *
+    var(--collectionCardCount) )
+  );
+
+  @media screen and (max-width: 600px) {
+    margin-top: 20px;
+    --collectionCardCount: 1;
+    --collectionCardWidth: 300px;
+  }
+
+  @media screen and (min-width: 900px) {
+    --collectionCardCount: 2;
+  }
+
+  @media screen and (max-width: 1400px) {
+    width: 90%;
+  }
+
+  @media screen and (min-width: 1400px) {
+    --collectionCardCount: 3;
+    --collectionCardWidth: 425px;
+  }
+
+  @media screen and (min-width: 1800px) {
+    --collectionCardCount: 4;
+  }
+
+  @media screen and (min-width: 2300px) {
+    --collectionCardCount: 5;
+  }
+}
+
+.collectionsContainer {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 0 auto;
+  // padding-top: 20px;
+  width: calc(
+    (var(--collectionCardWidth) + (var(--collectionCardMargin) * 2)) *
+      var(--collectionCardCount)
+  );
+
+  @media screen and (max-width: 600px) {
+    margin-top: 20px;
+    --collectionCardCount: 1;
+    --collectionCardWidth: 300px;
+  }
+
+  @media screen and (min-width: 900px) {
+    --collectionCardCount: 2;
+  }
+
+  @media screen and (max-width: 1400px) {
+    width: 90%;
+  }
+
+  @media screen and (min-width: 1400px) {
+    --collectionCardCount: 3;
+    --collectionCardWidth: 425px;
+  }
+
+  @media screen and (min-width: 1800px) {
+    --collectionCardCount: 4;
+  }
+
+  @media screen and (min-width: 2300px) {
+    --collectionCardCount: 5;
+  }
+  margin-top:0px;
+}
+
+.noRecords {
+  flex-grow: 1;
+  padding: 18px 54px;
+
+  .text {
+    font-family: 'gilroylight';
+    color: var(--notFound);
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    padding: 18px 12px;
+  }
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16px;
+
+  @media (max-width: 600px) {
+    position: absolute;
+    bottom: 2%;
+    right: 3%;
+    z-index: 1000;
+  }
+}
+
+.featuredBox {
+  width: calc(var(--collectionCardWidth)*2);
+  
+  @media (max-width: 1800px) {
+    width: var(--collectionCardWidth);
+  }
+}
+
+.link {
+  cursor: pointer;
+  color: var(--logoColor);
+  text-decoration: none;
+}
+
+.promo {
+  cursor: pointer;
+  color: var(--logoColor);
+  font-size: 20px;
+  text-decoration-color: var(--logoColor);
+  display: flex;
+  align-items: center;
+}

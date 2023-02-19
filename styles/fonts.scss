@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../src/fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('../src/fonts/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Rafale;
+    src: url('../src/fonts/Rafale.otf') format('opentype');
+}
+
+
+@font-face {
+    font-family: 'gilroylight';
+    src: url('../src/fonts/gilroy-light-webfont.woff2') format('woff2'),
+         url('../src/fonts/gilroy-light-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'newgilroybold';
+    src: url('../src/fonts/Gilroy-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'newgilroymedium';
+    src: url('../src/fonts/Gilroy-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'newgilroyregular';
+    src: url('../src/fonts/Gilroy-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'newgilroysemibold';
+    src: url('../src/fonts/Gilroy-SemiBold.ttf') format('truetype');
+}

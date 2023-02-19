@@ -1,0 +1,19 @@
+.notfound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .image {
+    width: 250px;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      width: 150px;
+    }
+  }
+
+  .title {
+    font-size: 20px;
+    color: var(--fontColor);
+  }
+}

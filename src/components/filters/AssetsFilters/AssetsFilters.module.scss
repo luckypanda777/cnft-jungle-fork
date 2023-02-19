@@ -1,0 +1,135 @@
+.galleryFilters {
+  position: sticky;
+  top: var(--headerHeight);
+  align-items: center;
+  left: 0;
+  z-index: 100;
+  background-color: var(--assetsBg);
+  display: flex;
+  //max-height: 80px;
+  padding: 24px 12px;
+
+  @media screen and (max-width: 600px) {
+    // display: none;
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+    padding: 6px 12px 18px 12px;
+  }
+
+  @media screen and (min-width: 601px) {
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    row-gap: 20px;
+    flex-wrap: wrap;
+    max-height: unset;
+    flex-direction: row;
+  }
+}
+
+.assetCount {
+  display: flex;
+  align-items: center;
+  color: var(--fontColor);
+}
+
+.mobileContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  width: 100%;
+}
+
+.mainFilters {
+  display: flex;
+  column-gap: 20px;
+  flex-grow: 1;
+  align-items: center;
+
+  @media screen and (max-width: 600px) {
+    // display: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 20px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 1400px) {
+    // display: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    row-gap: 20px;
+  }
+}
+
+
+.assetFilter {
+  width: 30%;
+  @media screen and (max-width: 600px) {
+    width: 290px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: inherit;
+    max-width: 250px;
+  }
+}
+
+.filterContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  & > div {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+
+.secondaryFilters {
+  display: flex;
+
+  @media screen and (max-width: 1400px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.priceFilter {}
+.sizeFilter {}
+
+.iconStyle {
+  padding: 2.5px;
+  color: var(--primaryColor);
+  background-color: var(--assetsBg);
+  border: 1px solid var(--primaryColor);
+  border-radius: 10px;
+  svg {
+    color: var(--fontColor);
+  }
+  &:hover {
+    color: var(--fontColor);
+    background-color: var(--primaryColor);
+    svg {
+      color: var(--whiteColor);
+    }
+  }
+}
+

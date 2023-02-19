@@ -1,0 +1,21 @@
+.bookmarkIconContainer {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+  position: relative;
+}
+
+.bookmarkedAmount {
+  position: absolute;
+  top: 0px;
+  right: -5px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--logoColor);
+  z-index: 1000;
+  font-family: newgilroybold;
+}

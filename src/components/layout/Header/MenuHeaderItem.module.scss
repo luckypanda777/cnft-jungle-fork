@@ -1,0 +1,36 @@
+.menuItem{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    cursor: pointer;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    &:hover{
+        color: var(--logoColor);
+        border-bottom-color: var(--logoColor);
+    }
+}
+
+.menuItemMenu{
+    cursor: default;
+}
+.menuItemSubMenu{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 30px;
+    cursor: pointer;
+    &:hover {
+        color: var(--logoColor)
+    }
+}
+.menuItemPopover{
+    pointer-events: auto;
+    border-radius: 0px 0px 12px 12px;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6.7957px);
+    background-image: unset;
+    overflow-y: hidden;
+    padding: 10px 20px;
+}

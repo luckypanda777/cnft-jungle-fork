@@ -1,0 +1,54 @@
+.trait {
+  width: 45.5%;
+  display: flex;
+  border-radius: 12px;
+  padding: 8px 15px;
+  background: var(--paperColor);
+  margin: 5px 0;
+  align-items: center;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+
+  .slot {
+    font-size: 10px;
+    color: #DADFE6
+  }
+
+  .name {
+    font-size: 12px;
+    letter-spacing: 1.68px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-transform: uppercase;
+    // font-family: gilroylight
+  }
+
+  .floor {
+    width: 30%;
+    margin-right: 10px;
+  }
+
+  .percent {
+    display: flex;
+    width: 20%;
+    background-color: var(--traitPercentBg);
+    font-size: 14px;
+    color: var(--traitPercentText);
+    margin: -8px -15px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+.compareTrait {
+  width: 100%;
+}

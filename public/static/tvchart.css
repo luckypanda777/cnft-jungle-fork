@@ -1,0 +1,13 @@
+.theme-dark:root {
+  --tv-color-platform-background: #171718;
+  --tv-color-pane-background: #171718;
+  --tv-color-pane-background-secondary: #d5317c;
+  --tv-color-toolbar-button-background-hover: #d5317c;
+  --tv-color-toolbar-button-background-secondary-hover: #d5317c;
+  --tv-color-toolbar-button-text: #fff;
+  --tv-color-toolbar-button-text-hover: #fff;
+  --tv-color-toolbar-button-text-active: #d5317c;
+  --tv-color-toolbar-button-text-active-hover: #fff;
+  --tv-color-toolbar-toggle-button-background-active: #d5317c;
+  --tv-color-toolbar-toggle-button-background-active-hover: #d5317c;
+}

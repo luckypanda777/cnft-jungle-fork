@@ -1,0 +1,12 @@
+.walletStats{
+  background-color: var(--bgColor);
+  border-radius: 12px;
+  padding: 48px 30px 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

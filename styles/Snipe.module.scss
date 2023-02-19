@@ -1,0 +1,41 @@
+.main {
+  width: 100%;
+  flex: auto;
+  background-color: var(--tagBg);
+  color: var(--fontColor);
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 12px;
+  @media screen and (max-width: 600px) {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.assetInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  row-gap: 10px;
+}
+
+.image {
+  border-radius: 20px;
+  overflow: hidden;
+  margin: auto;
+
+  @media screen and (max-width: 600px) {
+    min-width: 125px;
+    max-width: 125px;
+    height: 125px;
+    margin: 0;
+    flex: 1;
+  }
+}
+
+.assetTraits {
+  text-align: center;
+}

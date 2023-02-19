@@ -1,0 +1,283 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--bgColor);
+  width: 100%;
+}
+
+.primaryHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  min-height: 40px;
+  z-index: 1000;
+
+  @media screen and (max-width: 1200px) {
+    padding: 10px 20px;
+  }
+}
+
+.secondaryHeader {
+  display: flex;
+  flex-direction: row;
+  min-height: 50px;
+  background-color: var(--primaryColor);
+  padding: 0 24px;
+  z-index: 1000;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    padding: 0;
+  }
+}
+
+.mobilePagesHeader {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  justify-content: space-evenly;
+  background-color: var(--bgColor);
+
+  .pages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+  }
+
+  .actions {
+    display: flex;
+  }
+}
+
+.projectSelect {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  flex-basis: 20%;
+}
+
+.more {
+  display: flex;
+  flex-basis: 15%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.jungleGems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  white-space: nowrap;
+
+  @media screen and (max-width: 600px) {
+    justify-content: center;
+  }
+
+  .title {
+    color: var(--whiteColor);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    min-width: 60px;
+    cursor: default;
+  }
+
+  .chips {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    > a {
+      text-decoration: none;
+    }
+  }
+}
+
+.latestProjects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 4;
+  overflow: hidden;
+  white-space: nowrap;
+  justify-content: space-around;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    color: var(--whiteColor);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    @media screen and (max-width: 1450px) {
+      display: none;
+    }
+  }
+
+  .disabled {
+    color: var(--outOfStockBg);
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    margin-left: 10px;
+  }
+
+  .total {
+    color: var(--whiteColor);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    margin-left: 5px;
+  }
+
+  .change {
+    color: var(--tradeColor);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    margin-left: 2px;
+    min-width: 50px;
+    cursor: default;
+  }
+
+  .negative {
+    color: var(--negativeColor);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    margin-left: 2px;
+    min-width: 50px;
+    cursor: default;
+  }
+
+  .chips {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+
+    .marquee {
+      display: inline-block;
+      text-indent: 0;
+      animation: marquee 120s linear infinite;
+      text-transform: uppercase;
+      color: #f2f2f2;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translate(0, 0);
+      }
+
+      50% {
+        transform: translate(-1000%, 0);
+      }
+
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+
+    > a {
+      text-decoration: none;
+    }
+  }
+}
+
+.brand {
+  color: var(--fontColor);
+
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: var(--brandTitle);
+
+    img {
+      // height: 44px;
+      // width: 40px;
+      margin-right: 15px;
+    }
+
+    > h1 {
+      margin: 0;
+      font-size: 20px;
+      font-family: Rafale;
+    }
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.brandMobile {
+display: none;
+  margin-right: 15px;
+
+  a {
+    > img {
+      height: 35px;
+      width: 35px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    display: block;
+    margin-right: 5px;
+  }
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    min-width: 600px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: 700px;
+  }
+
+  @media screen and (min-width: 1536px) {
+    min-width: 800px;
+  }
+}
+
+.userActions {
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}

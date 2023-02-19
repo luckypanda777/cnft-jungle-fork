@@ -1,0 +1,12 @@
+.walletIconMobile{
+    display: none;
+    @media screen and (max-width: 476px) {
+        display: block;
+    }
+}
+.walletLabel{
+    display: block;
+    @media screen and (max-width: 476px) {
+        display: none;
+    }
+}

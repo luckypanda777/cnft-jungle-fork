@@ -1,0 +1,15 @@
+.main {
+  width: 100%;
+  flex: auto;
+  background-color: var(--assetsBg);
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+.marketsContainer {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+}

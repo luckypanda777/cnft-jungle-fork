@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://cnftjungle.io/
+
+# Sitemaps
+Sitemap: https://cnftjungle.io/sitemap.xml
+Sitemap: https://cnftjungle.io/collections-map.xml

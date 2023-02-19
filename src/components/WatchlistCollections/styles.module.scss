@@ -1,0 +1,9 @@
+.textScroll {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  column-gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 5px;
+}

@@ -1,0 +1,11 @@
+.textScroll {
+  width: 100%;
+  max-width: 100%;
+  animation: move 120s linear infinite;
+  display: flex;
+  column-gap: 10px;
+}
+
+@keyframes move {
+  to { transform: translateX(-100%); }
+}

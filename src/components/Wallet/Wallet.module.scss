@@ -1,0 +1,367 @@
+.body {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  max-width: 350px;
+  width: 33.333%;
+  position: sticky;
+  top: var(--headerHeight);
+  left: 0;
+  height: calc(100vh - 120px);
+  background-color: var(--sidebarBg);
+  overflow-y: auto;
+
+  &:after {
+    content: '';
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+    user-select: none;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: unset;
+    max-width: 325px;
+  }
+  border-top-left-radius: 12px;
+}
+
+.collectionHeader {
+  width: 70%;
+  @media screen and (max-width: 1500px) {
+    width: 100%;
+  }
+}
+
+.galleryList {
+  width: 70%;
+  @media screen and (max-width: 1500px) {
+    width: 100%;
+  }
+}
+
+.report {
+  margin-top: 25px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.96px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--errorColor);
+  text-align: center;
+}
+
+.sidebarWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.currentProject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+  color: var(--fontColor);
+}
+
+.projectLogo {
+  height: 75px;
+  border-radius: 12px;
+  // object-fit: contain;
+}
+
+.projectName {
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+}
+
+.walletNumber {
+  margin-top: 20px;
+  overflow: auto;
+  white-space: normal;
+  word-break: break-all;
+}
+
+.badge {
+  background-color: var(--badgeBg);
+  color: var(--badgeColor);
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+}
+
+.main {
+  width: 66.666%;
+  flex: auto;
+  padding-left: 28px;
+  background-color: var(--assetsBg);
+}
+
+.galleryFilters {
+  position: sticky;
+  top: var(--headerHeight);
+  align-items: center;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  max-height: 80px;
+  padding: 24px 12px;
+
+  @media screen and (max-width: 600px) {
+    // display: none;
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+    padding: 6px 12px 18px 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    row-gap: 20px;
+    flex-wrap: wrap;
+    max-height: unset;
+  }
+}
+
+.galleryGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.assetFilter {
+  width: 90%;
+  max-width: 350px;
+  @media screen and (max-width: 600px) {
+    width: 290px;
+  }
+}
+
+.filterHeading {
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 7px;
+  color: var(--fontColor);
+}
+
+.filterContainer {
+  display: flex;
+  flex-direction: row;
+
+  & > div {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  .powered {
+    color: var(--logoColor);
+    font-family: Rafale, sans-serif;
+  }
+}
+
+.noRecords {
+  flex-grow: 1;
+  padding: 18px 54px;
+
+  .text {
+    font-family: 'gilroylight';
+    color: var(--notFound);
+  }
+}
+
+.gallery {
+  margin: 0 auto;
+  width: calc(
+    (var(--assetCardWidth) + (var(--assetCardMargin) * 2)) *
+      var(--assetCardCount)
+  );
+
+  @media screen and (max-width: 600px) {
+    --assetCardCount: 1;
+  }
+
+  @media screen and (min-width: 640px) {
+    --assetCardCount: 2;
+  }
+
+  @media screen and (min-width: 1024px) {
+    --assetCardCount: 3;
+  }
+
+  @media screen and (min-width: 1280px) {
+    --assetCardCount: 4;
+  }
+
+  @media screen and (min-width: 1440px) {
+    --assetCardCount: 5;
+  }
+
+  @media screen and (min-width: 1600px) {
+    --assetCardCount: 6;
+  }
+
+  @media screen and (min-width: 1900px) {
+    --assetCardCount: 7;
+  }
+
+  @media screen and (min-width: 2100px) {
+    --assetCardCount: 8;
+  }
+}
+
+.galleryLarge {
+  --assetCardWidth: 235px;
+  margin: 0 auto;
+  width: calc(
+    (var(--assetCardWidth) + (var(--assetCardMargin) * 2)) *
+      var(--assetCardCount)
+  );
+
+  @media screen and (max-width: 600px) {
+    --assetCardCount: 1;
+  }
+
+  @media screen and (min-width: 640px) {
+    --assetCardCount: 2;
+  }
+
+  @media screen and (min-width: 1024px) {
+    --assetCardCount: 2;
+  }
+
+  @media screen and (min-width: 1280px) {
+    --assetCardCount: 3;
+  }
+
+  @media screen and (min-width: 1440px) {
+    --assetCardCount: 4;
+  }
+
+  @media screen and (min-width: 1600px) {
+    --assetCardCount: 5;
+  }
+
+  @media screen and (min-width: 1900px) {
+    --assetCardCount: 6;
+  }
+
+  @media screen and (min-width: 2100px) {
+    --assetCardCount: 6;
+  }
+}
+
+.galleryFilters {
+  position: sticky;
+  top: var(--headerHeight);
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  max-height: 80px;
+  padding: 24px 12px 18px;
+  margin: 0;
+
+  @media screen and (max-width: 600px) {
+    // display: none;
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+    padding: 6px 12px 18px 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    row-gap: 20px;
+    flex-wrap: wrap;
+    max-height: unset;
+  }
+}
+
+.mainFilters {
+  display: flex;
+  column-gap: 20px;
+  flex: 1;
+  align-items: center;
+
+  @media screen and (max-width: 600px) {
+    // display: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 20px;
+  }
+}
+
+.filterHeading {
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 7px;
+  color: var(--fontColor);
+}
+
+.filterContainer {
+  display: flex;
+  flex-direction: row;
+
+  & > div {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  .powered {
+    color: var(--logoColor);
+    font-family: Rafale, sans-serif;
+  }
+}
+
+.assetCount {
+  display: flex;
+  align-items: center;
+  color: var(--fontColor);
+}
+
+.link {
+  color: var(--fontColor);
+}

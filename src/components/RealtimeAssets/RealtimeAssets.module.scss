@@ -1,0 +1,48 @@
+.galleryGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery {
+  margin: 0 15px;
+
+  // width: calc(
+  //   (var(--assetCardWidth) + (var(--assetCardMargin) * 2)) *
+  //     var(--assetCardCount)
+  // );
+
+  @media screen and (max-width: 600px) {
+    --assetCardCount: 1;
+    --assetCardWidth: 180px;
+  }
+
+  @media screen and (min-width: 640px) {
+    --assetCardCount: 2;
+  }
+
+  @media screen and (min-width: 1024px) {
+    --assetCardCount: 3;
+  }
+
+  @media screen and (min-width: 1280px) {
+    --assetCardCount: 3;
+  }
+
+  @media screen and (min-width: 1440px) {
+    --assetCardCount: 3;
+  }
+
+  @media screen and (min-width: 1600px) {
+    --assetCardCount: 3;
+  }
+
+  @media screen and (min-width: 1900px) {
+    --assetCardCount: 5;
+  }
+
+  @media screen and (min-width: 2100px) {
+    --assetCardCount: 5;
+  }
+}

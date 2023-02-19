@@ -1,0 +1,31 @@
+.circulation {
+  //margin-top: 5px;
+  letter-spacing: 1.2px;
+  font-size: 16px;
+}
+
+.projectPolicy {
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  word-break: break-word;
+}
+
+.badge {
+  background-color: var(--badgeBg);
+  color: var(--badgeColor);
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  text-align: center;
+  word-break: break-word;
+  border-radius: 8px;
+}
+
+.collectionImg {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}

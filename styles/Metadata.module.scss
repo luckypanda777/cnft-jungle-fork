@@ -1,0 +1,15 @@
+.main {
+  width: 100%;
+  flex: auto;
+  background-color: var(--assetsBg);
+  min-height: calc(100vh - 120px);
+}
+
+.metadataContainer {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: calc(
+    (var(--collectionCardWidth) + (var(--collectionCardMargin) * 2)) *
+      var(--collectionCardCount)
+  );
+}

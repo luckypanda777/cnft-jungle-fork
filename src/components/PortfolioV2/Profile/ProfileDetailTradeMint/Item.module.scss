@@ -1,0 +1,102 @@
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  gap: 20px;
+}
+.box {
+  background: var(--bgColor);
+  border-radius: 12px;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 1fr 1fr;
+}
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+.detailLeft {
+  display: grid;
+}
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 9px;
+}
+.from {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 600;
+  color: var(--grey);
+  margin-top: 1px;
+}
+.status {
+  border-radius: 7px;
+  width: 57px;
+  height: 20px;
+  display: flex;
+  margin-top: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.textStatus {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+}
+.detailRight {
+  text-align: right;
+  display: grid;
+  align-content: center;
+}
+.buyPrice {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--grey);
+}
+.price {
+  color: var(--fontColor);
+  font-weight: 700;
+}
+.date {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--grey);
+  margin-top: 4px;
+}
+.time {
+  color: var(--fontColor);
+  font-weight: 700;
+}
+.hash {
+  display: grid;
+  line-height: 14px;
+  font-size: 12px;
+  grid-template-columns: 1fr auto;
+  margin-top: 5px;
+  align-items: center;
+}
+.textHash {
+  font-size: 12px;
+  color: var(--tradeLoss);
+  margin: 2px;
+}
+.button {
+  width: 35px;
+  height: 35px;
+  background-color: var(--bgColor);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.imageWrap {
+  margin: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,202 @@
+.plansContainer {
+  display: flex;
+  margin-right: 24px;
+  margin-left: 24px;
+  width: 100%;
+  margin-top: 20px;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+
+.launchBox {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  flex: 1;
+  align-items: flex-start;
+  text-align: left;
+  height: 100%;
+  padding: 50px;
+  margin: 10px;
+
+
+  @media screen and (max-width: 900px) {
+    width: auto;
+  }
+}
+
+.launchName {
+  font-size: 20px;
+}
+
+.launchDescription {
+  font-size: 15px;
+  color: var(--fontColor);
+  font-family: newgilroyregular;
+  line-height: 1.2;
+}
+
+.planBox {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  width: 33%;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+  padding: 70px 50px;
+  margin: 10px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  color: var(--fontColor);
+
+  @media screen and (max-width: 1200px) {
+    width: auto;
+    padding: 50px 30px;
+  }
+}
+
+.planName {
+  align-self: flex-start;
+  font-size: 35px;
+  letter-spacing: -0.44px;
+  font-family: newgilroybold;
+
+  @media screen and (max-width: 900px) {
+    align-self: center;
+  }
+}
+
+.planPrice {
+  font-size: 32px;
+  align-self: flex-start;
+  @media screen and (max-width: 900px) {
+    align-self: center;
+    font-size: 24px;
+  }
+}
+
+.planDescription {
+  align-self: flex-start;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  color: var(--fontColor);
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 900px) {
+    align-self: center;
+    text-align: center;
+  }
+}
+
+.planDetails {
+  align-self: flex-start;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: -0.2px;
+  color: var(--fontColor);
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 900px) {
+    align-self: center;
+  }
+}
+
+.planButton {
+    flex: 1;
+    background-color: var(--primaryColor);
+    color: var(--fontColor);
+    max-width: 300px;
+    max-height: 50px;
+    &:hover {
+      opacity: 0.9;
+      background-color: var(--primaryColor);
+      color: var(--fontColor);
+    }
+
+    @media screen and (max-width: 900px) {
+      font-size: 12px;
+    }
+}
+
+.eventsContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+    padding: 24px;
+    color: var(--whiteColor);
+    row-gap: 5px;
+    text-align: center;
+    width: 1000px;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../assets/snipingbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @media screen and (max-width: 900px) {
+      width: 400px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--logoColor);
+    border-radius: 10px;
+    padding: 24px;
+    color: var(--whiteColor);
+    row-gap: 10px;
+    text-align: center;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (max-width: 900px) {
+      width: 400px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+}
+
+.welcomeContainer {
+  width: auto;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 75px;
+  margin-bottom: 100px;
+  @media screen and (max-width: 900px) {
+    row-gap: 40px;
+  }
+}
+
+.topBorder {
+  width: 200px;
+  height: 10px;
+  border-radius: 100px;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottomBorder {
+  width: 200px;
+  height: 10px;
+  transform: rotate(-180deg);
+  position: absolute;
+  border-radius: 100px;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}

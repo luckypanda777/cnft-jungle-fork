@@ -1,0 +1,408 @@
+.body {
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  width: 100%;
+  flex: auto;
+  background-color: var(--assetsBg);
+  position: relative;
+  min-height: calc(100vh - 120px);
+  transition: margin 200ms ease-out;
+}
+
+.gallery {
+  //margin: 0 75px;
+  // width: calc(
+  //   (var(--assetCardWidth) + (var(--assetCardMargin) * 2)) *
+  //     var(--assetCardCount)
+  // );
+
+  width: 100%;
+  display: flex;
+
+  @media screen and (max-width: 600px) {
+    --assetCardCount: 2;
+    --assetCardWidth: 165px;
+  }
+
+  @media screen and (min-width: 640px) {
+    --assetCardCount: 2;
+  }
+
+  @media screen and (min-width: 1024px) {
+    --assetCardCount: 3;
+  }
+
+  @media screen and (min-width: 1280px) {
+    --assetCardCount: 4;
+  }
+
+  @media screen and (min-width: 1440px) {
+    --assetCardCount: 5;
+  }
+
+  @media screen and (min-width: 1600px) {
+    --assetCardCount: 6;
+  }
+
+  @media screen and (min-width: 1900px) {
+    --assetCardCount: 7;
+  }
+
+  @media screen and (min-width: 2100px) {
+    --assetCardCount: 8;
+  }
+}
+
+.galleryLarge {
+  --assetCardWidth: 235px;
+
+  width: 100%;
+  display: flex;
+  //margin: 0 75px;
+  // width: calc(
+  //   (var(--assetCardWidth) + (var(--assetCardMargin) * 2)) *
+  //     var(--assetCardCount)
+  // );
+
+  @media screen and (max-width: 600px) {
+    --assetCardCount: 1;
+    --assetCardWidth: 275px;
+  }
+
+  @media screen and (min-width: 640px) {
+    --assetCardCount: 2;
+  }
+
+  @media screen and (min-width: 1024px) {
+    --assetCardCount: 2;
+  }
+
+  @media screen and (min-width: 1280px) {
+    --assetCardCount: 3;
+  }
+
+  @media screen and (min-width: 1440px) {
+    --assetCardCount: 5;
+  }
+
+  @media screen and (min-width: 1750px) {
+    --assetCardCount: 6;
+  }
+
+  @media screen and (min-width: 2050px) {
+    --assetCardCount: 6;
+  }
+
+  @media screen and (min-width: 2250px) {
+    --assetCardCount: 7;
+  }
+}
+
+.traits {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.traitExplorerRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    width: 1070px;
+  }
+}
+
+.traitName {
+  font-size: 16px;
+  margin: 0;
+  padding-left: 12px;
+}
+
+.traitType {
+  margin: 0;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.traitExplorerCards {
+  display: flex;
+  flex-direction: row;
+
+  .cheapestCard {
+    // background-color: var(--slightlyUndervaluedColor);
+  }
+}
+
+.galleryGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filterHeading {
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 7px;
+  color: var(--fontColor);
+}
+
+.noRecords {
+  flex-grow: 1;
+  padding: 18px 54px;
+
+  .text {
+    font-family: 'gilroylight';
+    color: var(--notFound);
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    padding: 18px 12px;
+  }
+}
+
+.loader {
+  @media (max-width: 600px) {
+    position: fixed;
+    bottom: 30%;
+    right: 4%;
+    z-index: 1000;
+  }
+}
+
+.refresh {
+  @media (max-width: 600px) {
+    position: fixed;
+    bottom: 16%;
+    right: 1.5%;
+    z-index: 1000;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+  }
+}
+
+.reset {
+  @media (max-width: 600px) {
+    position: fixed;
+    bottom: 22%;
+    right: 1.5%;
+    z-index: 1000;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+  }
+}
+
+.notfound {
+  width: 100%;
+  flex: auto;
+  background-color: var(--assetsBg);
+  min-height: 86.75vh;
+  display: flex;
+  justify-content: center;
+}
+
+.galleryList {
+  width: 70%;
+  @media screen and (max-width: 1500px) {
+    width: 100%;
+  }
+}
+
+.traitExplorerHeading {
+  font-size: 18px;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: var(--fontColor);
+  font-weight: bold;
+}
+
+.traitExplorerHightlight {
+  margin-left: 6px;
+  margin-right: 6px;
+  font-size: 14px;
+  color: var(--logoColor);
+  font-weight: bold;
+}
+
+.galleryFilters {
+  position: sticky;
+  top: var(--headerHeight);
+  align-items: center;
+  left: 0;
+  z-index: 100;
+  background-color: var(--assetsBg);
+  display: flex;
+  max-height: 80px;
+  padding: 24px 12px 18px;
+
+  @media screen and (max-width: 600px) {
+    // display: none;
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+    padding: 6px 12px 18px 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    row-gap: 20px;
+    flex-wrap: wrap;
+    max-height: unset;
+  }
+}
+
+.traitGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.assetFilter {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  // max-width: 350px;
+  @media screen and (max-width: 600px) {
+    width: 290px;
+  }
+}
+
+.mainFilters {
+  display: flex;
+  column-gap: 20px;
+  flex: 1;
+  align-items: center;
+
+  @media screen and (max-width: 600px) {
+    // display: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 20px;
+  }
+}
+
+.filterContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  & > div {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.iconTab {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover { 
+      svg {
+        color: white;
+      }
+    };
+
+    svg {
+      font-size: 18px;
+      color: var(--primaryColor);
+     
+    }
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--bgColor);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.assetCount {
+  display: flex;
+  align-items: center;
+  color: var(--fontColor);
+}
+
+.eventsContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primaryColor);
+  border-radius: 10px;
+  padding: 24px;
+  color: var(--whiteColor);
+  row-gap: 5px;
+  text-align: center;
+  margin-top: 50px;
+  width: 1000px;
+  height: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../assets/crystals.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+  @media screen and (max-width: 1400px) {
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+    z-index: 1;
+    // linear gradient
+    background: linear-gradient(180deg, rgba(17,17,17,1) 100%, rgba(17,17,17,1) 0%);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+    z-index: 1;
+    // linear gradient
+    background: linear-gradient(180deg, rgba(17,17,17,1) 0%, rgba(17,17,17,1) 100%);
+  }
+}
+

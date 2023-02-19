@@ -1,0 +1,321 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'newgilroybold';
+
+  & > img {
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+
+    & > span {
+      text-align: center;
+      word-break: break-all;
+    }
+
+    & > button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.compareContainer {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  .assetInfo {
+    width: 100%;
+    .ranks {
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 20px;
+
+    .assetInfo {
+      width: 100%;
+      .ranks {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.compare {
+  width: 50%;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.compareLower {
+  color: var(--errorColor) !important;
+}
+
+.compareHigher {
+  color: var(--successColor) !important;
+}
+
+.compareEqual {
+  color: var(--tertiaryColor) !important;
+}
+
+.compareContainerLower {
+  background-color: var(--errorColor) !important;
+}
+
+.compareContainerHigher {
+  background-color: var(--successColor) !important;
+}
+
+.compareContainerEqual {
+  background-color: var(--tertiaryColor) !important;
+}
+
+.title {
+  flex-grow: 1;
+  font-size: 20px;
+  color: var(--logoColor);
+  text-transform: uppercase;
+  font-family: Rafale;
+}
+
+.paper {
+  background-color: var(--paperColor);
+  border-radius: 12px;
+  padding: 10px 15px;
+  font-family: 'newgilroybold';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .heading {
+    font-size: 10px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+  }
+
+  .value {
+    color: var(--primaryColor);
+    font-size: 25px;
+  }
+}
+
+.inverted {
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+
+  .value {
+    color: var(--whiteColor);
+  }
+}
+
+.assetInfo {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  & > div {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .image {
+    min-width: 205px;
+    min-height: 205px;
+    flex-grow: 1;
+    position: relative;
+
+    img {
+      width: 205px;
+      height: 205px;
+      border-radius: 10px;
+      object-fit: contain;
+    }
+
+    @media screen and (max-width: 600px) {
+      display: flex;
+      justify-content: center;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  .ranks {
+    width: 30.5%;
+
+    & > div {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+
+  .price {
+    width: 39.99%;
+
+    & > div {
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .linkInput {
+      background-color: var(--assetsBg);
+      border-radius: 10px;
+      font-size: 10px;
+      padding: 10px;
+      border: none;
+      color: var(--blackColor);
+      min-width: 170px;
+
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+
+    .share {
+      display: flex;
+      flex-direction: row;
+
+      & > * {
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+}
+
+.assetTraits {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .trait {
+    width: 26%;
+    display: flex;
+    border-radius: 12px;
+    padding: 8px 15px;
+    background: var(--paperColor);
+    margin: 5px 8px;
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+
+    .slot {
+      font-size: 10px;
+    }
+
+    .name {
+      font-size: 12px;
+      letter-spacing: 1.68px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      text-transform: uppercase;
+    }
+
+    .percent {
+      display: flex;
+      width: 33.333%;
+      background-color: var(--traitPercentBg);
+      font-size: 14px;
+      color: var(--traitPercentText);
+      margin: -8px -15px;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .compareTrait {
+    width: 100%;
+  }
+}
+
+.outOfStock {
+  background-color: var(--outOfStockBg);
+  color: var(--assetsBg);
+
+  .value {
+    color: var(--assetsBg);
+  }
+}
+
+.footer {
+  color: var(--disclaimerText);
+  font-size: 12px;
+
+  & > span {
+    font-weight: 700;
+    font-family: 'newgilroybold';
+  }
+
+  & > p {
+    font-family: 'gilroylight';
+    margin: 0;
+
+    &:last-child {
+      margin-top: 10px;
+    }
+  }
+}

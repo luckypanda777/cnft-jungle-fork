@@ -1,0 +1,100 @@
+.featuredBox {
+  margin-left: auto;
+  width: calc(var(--collectionCardWidth) * 2);
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-top: 20px;
+
+  @media (max-width: 1800px) {
+    width: var(--collectionCardWidth);
+  }
+}
+
+.featured {
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: #e8007d;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-family: newgilroymedium;
+}
+
+.title {
+  font-family: newgilroymedium;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.56px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-family: newgilroymedium;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.28px;
+  margin-bottom: 5px;
+  max-width: 325px;
+  word-break: break-word;
+  margin-bottom: 10px;
+}
+
+.stat {
+  padding: 5px;
+  border-radius: 10px;
+  border: solid 2px #d5317c;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.carouselItem {
+  max-width: 600px;
+  min-width: 600px;
+  margin-right: 15px;
+}
+
+.carouselDot {
+  position: unset !important;
+  margin-top: 50px;
+}
+
+.activeDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin: -40px 5px 10px 5px;
+  background-color: #ffffff;
+}
+
+.inactiveDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin: -40px 5px 10px 5px;
+  background-color: #343437;
+}
+
+.arrowRight {
+  position: absolute;
+  right: 20px;
+}
+
+.arrowLeft {
+  position: absolute;
+  left: 20px;
+}

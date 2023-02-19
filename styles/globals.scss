@@ -1,0 +1,420 @@
+@import-normalize;
+
+:root {
+  --collectionCardWidth: 415px;
+  --collectionCardCount: 1;
+  --collectionCardMargin: 10px;
+
+  --assetCardWidth: 175px;
+  --assetCardCount: 7;
+  --assetCardMargin: 10px;
+
+  --guideCardWidth: 500px;
+
+  --headerHeight: 68px;
+
+  // --collectionCardBg: #fff;
+  // --collectionCardColor: rgba(0, 0, 0, 0.87);  
+  --whiteColor: #fff;
+  // --blackColor: #000;
+  // --loveColor: #7a0a39;
+  // --errorColor: #c40d00;
+  // --successColor: #3b9c06;
+  // --slightlyUndervaluedColor: #3ebc8c;
+  // --undervaluedColor: #038352;
+  // --severeUndervaluedColor: #D53143;
+  // // --overvaluedColor: #f06543;
+  // // --overvaluedColor: #ee6123;
+  // --slightlyOvervaluedColor: #ee7a4c;
+  // --overvaluedColor: #d75a28;
+  // --severeOvervaluedColor: #7b0828;
+  // --tradeLoss: #E74C3C;
+  // --tradeColor: #75eb35;
+  // --negativeColor: #f89993;
+  // --warningColor: #d16b1d;
+
+  // --brandTitle: var(--blackColor);
+  // --fontColor: var(--blackColor);
+  // --tagBg: var(--whiteColor);
+  // --tabBg: var(--whiteColor);
+  // --tagColor: var(--blackColor);
+  // --badgeBg: var(--blackColor);
+  // --badgeColor: var(--whiteColor);
+  // --bgColor: var(--whiteColor);
+  // --tabColor: #e6e6e6;
+  // --sidebarBg: var(--bgColor);
+  // --assetsBg: #f6f7fb;
+  // --outOfStockBg: #b6b9ce;
+  // --collectionFont: #535561;
+  // --disclaimerText: #535561;
+  // --paperColor: var(--whiteColor);
+  // --traitPercentBg: #d8d8e6;
+  // --traitPercentText: #424242;
+  // --saleCardBg: #565656;
+  // --notFound: #939393;
+  // --transparentAccordinBg: #fafafa;
+
+  // --grey: #b6b8cd;
+  // --rankGrey: #a8a8a8;
+  // --lightGrey: #e7e7e7;
+  // --backgroundGrey: #f5f7fb;
+
+  // --searchBorder: #d1d5de;
+  // --searchColor: var(--fontColor);
+  // --searchBg: #fff;
+  // --searchPaper: #d1d5de;
+
+  // --selectBorder: #d1d5de;
+  // --selectColor: #000;
+  // --selectBg: #fff;
+
+  // --inputBorder: #d1d5de;
+  // --inputColor: #000;
+  // --inputBg: #fff;
+
+  // --acceptBtnColor: #fff;
+
+  // --accordionColor: rgba(0, 0, 0, 0.87);
+  // --accordionBg: rgba(0, 0, 0, 0.03);
+  // --accordionBorder: 1px solid rgba(0, 0, 0, 0.12);
+  // --primaryBorder: 1px solid var(--primaryColor);
+  // --accordionIconColor: rgba(0, 0, 0, 0.54);
+
+  // --filterIconColor: rgba(0, 0, 0, 0.54);
+
+  // --skeletonColor: rgba(0, 0, 0, 0.11);
+
+  // --goldenCard: #FFBC42;
+
+  // --walletButtonColor: #D5317C;
+  // --logoColor: #d5317c;
+  // --primaryColor: #d5317c;
+  // --secondaryColor: #19191f;
+  // --assetCardBg: #d8d8e6;
+  // --tertiaryColor: #697BF2;
+
+  --logoColor: #d5317c;
+  --primaryColor: var(--logoColor);
+  --collectionCardBg: #171718;
+  --collectionCardColor: #fff;
+  --brandTitle: #DADFE6;
+  --fontColor: #fff;
+  --bgColor: #171718;
+  --tabColor: none;
+  --sidebarBg: #171718;
+  --assetsBg: #111;
+  --outOfStockBg: #343437;
+  --saleCardBg: #343437;
+  --collectionFont: #fff;
+  --disclaimerText: var(--fontColor);
+  --paperColor: #343437;
+  --errorColor: #f14236;
+  --successColor: #61d820;
+  --slightlyUndervaluedColor: #6bf2ae;
+  --undervaluedColor: #31D582;
+  --severeUndervaluedColor: #D5317C;
+  --cardBgColor: #333336;
+  --negativeValueColor: #FF4851;
+  --positiveValueColor: #2BD076;
+  --shadowColor: #434347;
+  --topRankColor: #DBA421;
+  --buyStatusColor: #30D682;
+  --buyStatusBgColor: #30D68210;
+  --mintStatusColor: #E3A400;
+  --mintStatusBgColor: #E3A40010;
+  --saleStatusColor: #D5317C;
+  --saleStatusBgColor: #D5317C10;
+  --headerNewsBgColor: #111111;
+  --headerSearchBgColor: #2E2E35;
+  --cartSellTitleValue: #686873;
+  // --overvaluedColor: #f06543;
+  // --overvaluedColor: #ee6123;
+
+  --slightlyOvervaluedColor: #e06b3d;
+  --overvaluedColor: #F05858;
+  --severeOvervaluedColor: #E15554;
+  --tradeLoss: #D5317C;
+  --tradeColor: #31D582;
+  --traitPercentBg: #343437;
+  --traitPercentText: #fff;
+  --notFound: #343437;
+  --tagBg: var(--blackColor);
+  --tabBg: var(--assetsBg);
+  --tagColor: var(--whiteColor);
+  --badgeBg: var(--blackColor);
+  --lightGrey: #343437;
+  --grey: #BEBDC6;
+  --backgroundGrey: #f5f7fb;
+  --rankGrey: #BEBDC6;
+  --transparentAccordinBg: #171718;
+  --searchBorder: #343437;
+  --searchColor: var(--fontColor);
+  --searchBg: #171718;
+  --searchPaper: #343437;
+  --selectBorder: #343437;
+  --selectColor: #BEBDC6;
+  --selectBg: #121212;
+  --inputBorder: #343437;
+  --inputColor: #BEBDC6;
+  --inputBg: #171718;
+  --acceptBtnColor: #BEBDC6;
+  --accordionColor: #fff;
+  --accordionBg: #29292B;
+  --accordionBorder: 1pxsolidhsla(0,0%,100%,.12);
+  --primaryBorder: 1pxsolidvar(--logoColor);
+  --accordionIconColor: #fff;
+  --filterIconColor: #fff;
+  --skeletonColor: hsla(0,0%,100%,.13);
+  --goldenCard: #F2BA69;
+  --walletButtonColor: var(--logoColor);
+  --secondaryColor: #19191f;
+  --assetCardBg: #171718;
+  --tertiaryColor: #697BF2;
+}
+
+[data-theme='dark'] {
+  --logoColor: #d5317c;
+  --primaryColor: var(--logoColor);
+  --collectionCardBg: #171718;
+  --collectionCardColor: #fff;
+  --brandTitle: #DADFE6;
+  --fontColor: #fff;
+  --bgColor: #171718;
+  --tabColor: none;
+  --sidebarBg: #171718;
+  --assetsBg: #111;
+  --outOfStockBg: #343437;
+  --saleCardBg: #343437;
+  --collectionFont: #fff;
+  --disclaimerText: var(--fontColor);
+  --paperColor: #343437;
+  --errorColor: #f14236;
+  --successColor: #61d820;
+  --slightlyUndervaluedColor: #6bf2ae;
+  --undervaluedColor: #3DA35D;
+  --severeUndervaluedColor: #D5317C;
+  // --overvaluedColor: #f06543;
+  // --overvaluedColor: #ee6123;
+
+  --slightlyOvervaluedColor: #e06b3d;
+  --overvaluedColor: #F05858;
+  --severeOvervaluedColor: #E15554;
+  --tradeLoss: #D5317C;
+  --tradeColor: #31D582;
+  --traitPercentBg: #343437;
+  --traitPercentText: #fff;
+  --notFound: #343437;
+  --tagBg: var(--blackColor);
+  --tabBg: var(--assetsBg);
+  --tagColor: var(--whiteColor);
+  --badgeBg: var(--blackColor);
+  --lightGrey: #343437;
+  --grey: #BEBDC6;
+  --backgroundGrey: #f5f7fb;
+  --rankGrey: #BEBDC6;
+  --transparentAccordinBg: #171718;
+  --searchBorder: #343437;
+  --searchColor: var(--fontColor);
+  --searchBg: #171718;
+  --searchPaper: #343437;
+  --selectBorder: #343437;
+  --selectColor: #BEBDC6;
+  --selectBg: #121212;
+  --inputBorder: #343437;
+  --inputColor: #BEBDC6;
+  --inputBg: #171718;
+  --acceptBtnColor: #BEBDC6;
+  --accordionColor: #fff;
+  --accordionBg: #29292B;
+  --accordionBorder: 1pxsolidhsla(0,0%,100%,.12);
+  --primaryBorder: 1pxsolidvar(--logoColor);
+  --accordionIconColor: #fff;
+  --filterIconColor: #fff;
+  --skeletonColor: hsla(0,0%,100%,.13);
+  --goldenCard: #F2BA69;
+  --walletButtonColor: var(--logoColor);
+  --secondaryColor: #19191f;
+  --assetCardBg: #171718;
+  --tertiaryColor: #697BF2;
+  --objectFit: cover;
+}
+
+.highcharts-background {
+  fill: var(--assetsBg);
+}
+
+.highcharts-container text {
+  fill: var(--fontColor);
+}
+
+.highcharts-subtitle,
+.highcharts-credits,
+.highcharts-axis-title {
+  fill-opacity: 1;
+}
+.highcharts-grid-line {
+  stroke: var(--fontColor);
+  stroke-opacity: 0.2;
+}
+
+// .highcharts-tooltip-box {
+//   fill: black;
+//   fill-opacity: 0.6;
+//   stroke-width: 0;
+// }
+
+// .highcharts-tooltip text {
+//   fill: white;
+//   text-shadow: 0 0 3px black;
+// }
+
+.highcharts-column-series rect.highcharts-point {
+  stroke: var(--assetsBg);
+}
+
+.highcharts-plot-border {
+  stroke: var(--fontColor);
+  stroke-opacity: 0.5;
+}
+
+.highcharts-axis-line {
+  stroke: var(--fontColor);
+  stroke-opacity: 0.5;
+}
+
+.highcharts-menu-item {
+  fill: var(--whiteColor);
+}
+
+.highcharts-selection-marker {
+  fill: var(--whiteColor);
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  width: 100%;
+  position: relative;
+  font-family: 'newgilroymedium';
+  box-sizing: border-box;
+  background-color: var(--assetsBg);
+  line-height: 1;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #BEBDC6;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BEBDC6;
+}
+
+// margins
+// m-h = margin horizontal
+.m-5 {
+  margin: 5px;
+}
+
+.m-h-5 {
+  margin: 5px 0;
+}
+
+.m-v-5 {
+  margin: 0 5px;
+}
+
+.m-8 {
+  margin: 5px;
+}
+
+.m-h-8 {
+  margin: 8px 0;
+}
+
+.m-v-8 {
+  margin: 0 8px;
+}
+
+// flex box
+.flex {
+  display: flex;
+}
+
+.f-1 {
+  flex: 1;
+}
+
+.direction-row {
+  flex-direction: row;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+
+.notFoundMain {
+  width: 100%;
+  flex: auto;
+  background-color: var(--assetsBg);
+  min-height: 86.75vh;
+  display: flex;
+  justify-content: center;
+}
+
+.nextImage {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.nextImage-ready {
+  opacity: 1;
+}
+
+.collectionsTable {
+  display: block;
+
+  .ReactVirtualized__Table__headerColumn {
+    & > span {
+      max-width: 80%;
+    }
+  }
+}

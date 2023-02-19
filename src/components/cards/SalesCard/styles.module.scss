@@ -1,0 +1,164 @@
+.description {
+  font-family: 'newgilroybold';
+  color: var(--fontColor);
+}
+
+.primaryInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+
+  > div {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    letter-spacing: 1.08px;
+    font-size: 9px;
+    text-transform: uppercase;
+  }
+
+  .value {
+    font-size: 15px;
+  }
+}
+
+.priceInfo {
+  margin: 10px -10px -10px -10px;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+
+  .title {
+    letter-spacing: 1.08px;
+    color: var(--whiteColor);
+    font-size: 12px;
+    min-height: 12px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+}
+
+.traitInfo {
+  margin: 10px -10px -10px -10px;
+  background-color: var(--lightGrey);
+  color: var(--whiteColor);
+
+  .title {
+    letter-spacing: 1.08px;
+    color: var(--whiteColor);
+    font-size: 12px;
+    min-height: 12px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+}
+
+.outOfStock {
+  background-color: var(--saleCardBg);
+  color: var(--whiteColor);
+
+  .title {
+    color: var(--whiteColor);
+  }
+}
+
+.image {
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.priceContainer {
+  padding: 9px 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mark {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background-color: var(--badgeBg);
+  color: var(--primaryColor);
+  font-size: 10px;
+  right: 10px;
+  top: 26px;
+  text-align: center;
+}
+
+.rank {
+  align-items: flex-start;
+  font-size: 22px;
+}
+
+.muiCard {
+  width: var(--assetCardWidth);
+  border-radius: 10px;
+  background-color: var(--collectionCardBg);
+  color: var(--collectionCardColor);
+}
+
+.name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-items: flex-end;
+
+  .title {
+    text-align: right;
+  }
+
+  .value {
+    align-self: flex-end;
+  }
+}
+
+.circulation {
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+    word-break: break-word;
+  }
+  > span {
+    font-size: 13px;
+    background-color: var(--lightGrey);
+    border-radius: 5px;
+    color: var(--textColor);
+    padding: 4px 10px 4px;
+    @media screen and (max-width: 600px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.valueCoefficientOvervalued {
+  background-color: var(--overvaluedColor);
+}
+
+.valueCoefficientUndervalued {
+  background-color: var(--undervaluedColor);
+}
+
+.valueCoefficientSevereOvervalued {
+  background-color: var(--severeOvervaluedColor);
+}
+
+.valueCoefficientSevereUndervalued {
+  background-color: var(--severeUndervaluedColor);
+}
+
+.valueCoefficientSlightlyOvervalued {
+  background-color: var(--slightlyOvervaluedColor);
+}
+
+.valueCoefficientSlightlyUndervalued {
+  background-color: var(--slightlyUndervaluedColor);
+}

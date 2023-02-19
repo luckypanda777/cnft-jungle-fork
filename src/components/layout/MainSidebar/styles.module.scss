@@ -1,0 +1,35 @@
+[data-theme='dark'] {
+  .inversePng {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+}
+
+.menuItemPopover{
+  pointer-events: auto;
+    background-color:var(--bgColor);
+    border-radius:0;
+    backdrop-filter: blur(6.7957px);
+    background-image: unset;
+    overflow-y: auto;
+    right: 0;
+    left: unset;
+    width: 283px;
+    height: calc(100vh - var(--headerHeight)),
+}
+.socialsIcon {
+  color: var(--grey);
+  &:hover {
+    color: var(--logoColor);
+    cursor: pointer;
+  }
+}
+
+.menuItem{
+  &:hover{
+    span{
+      color: var(--fontColor);
+      
+    }
+  }
+}

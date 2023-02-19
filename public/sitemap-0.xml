@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://cnftjungle.io</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/calendar</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/collections</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/guides</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/indices</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/king</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/leaderboards</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/manage-extension</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/manage-extension/ManageExtension</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/manage-subscription</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/metadata</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/minting</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/minting-now</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/portfolio</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/promotions</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/snipe</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/sniping</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/statistics</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/watchlist</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/wenno</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.155Z</lastmod></url>
+<url><loc>https://cnftjungle.io/whales</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2022-08-15T16:35:47.156Z</lastmod></url>
+</urlset>

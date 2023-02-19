@@ -1,0 +1,62 @@
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  gap: 20px;
+}
+.box {
+  background: var(--bgColor);
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr auto;
+}
+.detailLeft {
+  text-align: right;
+}
+.address {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+}
+.time {
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--shadowColor);
+  margin-top: 2px;
+}
+.action {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--grey);
+}
+.actionTimes {
+  color: var(--fontColor);
+  font-weight: 700;
+}
+.subscription {
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 1px;
+  color: var(--grey);
+}
+.subscriptionName {
+  color: var(--fontColor);
+  font-weight: 700;
+}
+.button {
+  width: 35px;
+  height: 35px;
+  background-color: var(--bgColor);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.imageWrap {
+  margin: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

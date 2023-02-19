@@ -1,0 +1,25 @@
+.divider {
+  background-color: var(--lightGrey);
+  height: 1px;
+  margin-top: -2px;
+}
+
+.portfolioTabs {
+  font-size: 14px;
+  padding-left: 50px;
+  min-height: unset;
+  margin-top: 14px;
+}
+
+.portfolioTab {
+  color: var(--fontColor) !important;
+  text-transform: capitalize;
+  min-width: unset;
+  margin-right: 30px;
+  padding: 16px 0;
+  min-height: unset;
+}
+
+.portfolioTab:last-child {
+  margin-right: 0px;
+}

@@ -1,0 +1,30 @@
+.divider {
+  background-color: #343437;
+  height: 1px;
+  margin-top: -2px;
+}
+
+.collectionTabs {
+  font-size: 14px;
+  margin-left: 50px;
+}
+
+.collectionTab {
+  color: white !important;
+  text-transform: capitalize;
+  min-width: unset;
+  padding: 0;
+  margin-right: 30px;
+
+  &:hover {
+    color: var(--logoColor) !important;
+  }
+}
+
+.collectionTab:last-child {
+  margin-right: 0px;
+}
+
+.tabContainer {
+  margin-bottom: 20px;
+}

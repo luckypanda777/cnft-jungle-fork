@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-right: 7.5px;
+}
+
+.name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 120px;
+  font-size: 12px;
+  color: white;
+}
+
+.supporterImg {
+  border-radius: 25%;
+  margin-right: 5px;
+}
+
+.supporterImgBorder {
+  border: 1px solid white;
+}

@@ -1,0 +1,32 @@
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  gap: 10px;
+}
+.box {
+  background: var(--bgColor);
+  border-radius: 12px;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 1fr 1fr;
+}
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.detailLeft {
+  display: grid;
+  align-content: center;
+}
+.detailRight {
+  text-align: right;
+  display: grid;
+  align-content: center;
+}
+.button {
+  width: 35px;
+  height: 35px;
+}
